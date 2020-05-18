@@ -20,7 +20,7 @@ Apache ftp站点根目录为 /var/www/html/ftp，文件结构为：<br>
 
 <br><br>
 如遇到ssh打洞不定时TCP连接断开（表现为网页出现500类错误，systemctl status告警无法在远端监听相应端口，英语告警），请使用daemon文件夹里的守护进程来定期更换端口并重启Nginx。请创建/daemon文件夹并将本项目daemon文件夹里的守护进程放入其中，设置crontab的定时任务请仿照如下：<br>
-*/1 * * * * root /usr/bin/python3 /daemon/daemon-requestmirror.py
+*/1 * * * * root /usr/bin/python3 /daemon/daemon-requestmirror.py<br>
 */1 * * * * root /usr/bin/python3 /daemon/daemon-ftp.py
 
 两个守护进程，其中第一个为手动请求镜像的守护进程，第二个是apache ftp站点守护进程。（守护进程主要靠更换ssh打洞的端口来持续连接）

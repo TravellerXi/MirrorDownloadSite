@@ -16,7 +16,7 @@ Apache ftp站点根目录为 /var/www/html/ftp，文件结构为：<br>
 │   └── README.html<br>
 
 <br>
-将本项目中的main.py放入ownload_Programm_SourceCode文件夹并使用'nohup python3 -u main.py > main.log 2>&1 &'来启动该项目。（请事先pip install flask）然后为该Python网页打洞穿透到远程服务器。
+将本项目中的main.py放入ownload_Programm_SourceCode文件夹并使用'nohup python3 -u main.py > main.log 2>&1 &'来启动该项目。（请事先安装python3 环境 并 pip3 install flask）然后为该Python网页打洞穿透到远程服务器。
 
 <br><br>
 如遇到ssh打洞不定时TCP连接断开（表现为端口不通），请使用daemon文件夹里的守护进程来定期更换端口并重启Nginx。请创建/daemon文件夹并将本项目daemon文件夹里的守护进程放入其中，设置crontab的定时任务请仿照如下：<br>

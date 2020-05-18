@@ -6,7 +6,7 @@ Want to see a sample? Please refer <a href='https://mirror.fastspeedgo.xyz' targ
 <a href='https://mirror.fastspeedgo.xyz' target='_blank'>镜像示例网站</a>
 
 <br><br>
-可以使用ssh打洞，从本地服务器穿透到云端服务器，本地服务器专门用来下载,本地服务器开启apache文件遍历，云端服务器使用Nginx做反向代理。相应技术参考<a href='https://blog.mytlu.cn/?p=6' target='_blank'>我的博客</a><br>
+可以使用ssh打洞，从本地服务器穿透到云端服务器，本地服务器专门用来下载,本地服务器开启apache文件遍历，云端服务器使用Nginx做反向代理。SSH打洞的相应技术参考<a href='https://blog.mytlu.cn/?p=6' target='_blank'>我的博客</a><br><br><br>
 Apache ftp站点根目录为 /var/www/html/ftp，文件结构为：<br>
 ├── Download_Programm_SourceCode<br>
 ├── README.html<br>

@@ -12,4 +12,6 @@ Want to see a sample? Please refer <a href='https://mirror.fastspeedgo.xyz' targ
 */1 * * * * root /usr/bin/python3 /daemon/daemon-requestmirror.py
 */1 * * * * root /usr/bin/python3 /daemon/daemon-ftp.py
 
-俩个守护进程，其中第一个为手动请求镜像的守护进程，第二个是apache ftp站点守护进程。（守护进程主要靠更换ssh打洞的端口来持续连接）
+两个守护进程，其中第一个为手动请求镜像的守护进程，第二个是apache ftp站点守护进程。（守护进程主要靠更换ssh打洞的端口来持续连接）
+
+

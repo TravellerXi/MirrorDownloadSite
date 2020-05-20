@@ -20,6 +20,7 @@ Apache ftp站点根目录为 /var/www/html/ftp，文件结构为：<br>
 apache 的ftp 站点也请使用ssh打洞穿透到远程服务器。
 
 <br><br>
+Daemon Usage 守护进程用法：<br>
 如遇到ssh打洞不定时TCP连接断开（表现为网页出现500类错误，systemctl status告警无法在远端监听相应端口，英语告警），请使用daemon文件夹里的守护进程,该守护进程将自动定期更换端口并重启Nginx。设置守护进程办法：请创建/daemon文件夹并将本项目daemon文件夹里的守护进程放入其中，另外，请仿照如下设置crontab的定时任务：<br>
 */1 * * * * root /usr/bin/python3 /daemon/daemon-requestmirror.py<br>
 */1 * * * * root /usr/bin/python3 /daemon/daemon-ftp.py

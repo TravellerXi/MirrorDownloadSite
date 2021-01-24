@@ -16,7 +16,7 @@ Apache ftp站点根目录为 /var/www/html/ftp，文件结构为：<br>
 │   └── README.html<br>
 
 <br>
-将本项目中的main.py放入ownload_Programm_SourceCode文件夹并使用'nohup python3 -u main.py > main.log 2>&1 &'来启动该项目（请事先安装python3 环境 并 pip3 install flask）。然后为该Python网页打洞穿透到远程服务器。<br>
+将本项目中的main.py放入download_Programm_SourceCode文件夹并使用'nohup python3 -u main.py > main.log 2>&1 &'来启动该项目（请事先安装python3 环境 并 pip3 install flask）。然后为该Python网页打洞穿透到远程服务器。<br>
 apache 的ftp 站点也请使用ssh打洞穿透到远程服务器。
 
 <br><br>
